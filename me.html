@@ -3,53 +3,98 @@
 <head>
 <meta charset="utf-8">
 <title>About me</title>
-    <!-- <link rel="stylesheet" href="me.css" type="text/css" /> -->
-    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/common.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/me.css" type="text/css" />
 </head>
 <body>
-    <div class="meHeader header">
+    <!-- Header of this page -->
+    <div class="subHeader">
         <p class="name">Milo Flowers Website</p>
         <ul class="nav-bar">
             <li><a href="index.html"><span>Home</span></a></li>
             <li><a href="me.html"><span>About Me</span></a></li>
             <li><a href="sourcelog.html"><span>Source Log</span></a></li>
             <li><a href="feedback.html"><span>Feedback</span></a></li>
+            <li><a href="sitemap.html"><span>Site Map</span></a></li>
         </ul>
     </div>
-    <!-- <ul>
-        <li><a href="https://www.anu.edu.au">ANU Website</a></li>
-        <li><a href="#aboutMe">About me</a></li>
-        <li><a href="#myPassion">My passion</a></li>
-    </ul> -->
-    <div class="content">
-        <div>
-            <h1><img src="./Images/logo.jpg" alt="logo.jpg"></h1>
-            <h1>About Me</h1>
-            <div style="margin-left: 30%;">
-                <table>
-                    <tr>
-                        <td rowspan="4" style="width: 300px;"><img src="./Images/profile.jpg"></td>
-                        <td>Name:</td>
-                        <td>Yuhui Pang</td>
-                    </tr>
-                    <tr>
-                        <td>Age:</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>University:</td>
-                        <td>Australian National University</td>
-                    </tr>
-                    <tr>
-                        <td>Major:</td>
-                        <td>Master of Computing</td>
-                    </tr>
-                </table>
-            </div>
+    <div class="textHeader"><img  src="./Images/textSpilt.jpg" alt="textSpilt.jpg"></div>
+    <!-- About me part -->
+    <div id="aboutMe">
+        <h1>About Me</h1>
+        <div class="introTable">
+            <table>
+                <tr>
+                    <td rowspan="6" style="width: 250px;"><img src="./Images/profile.jpg"></td>
+                    <td class="lable">Name:</td>
+                    <td>Yuhui Pang</td>
+                </tr>
+                <tr>
+                    <td class="lable">Age:</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td class="lable">University:</td>
+                    <td>Australian National University</td>
+                </tr>
+                <tr>
+                    <td class="lable">ID:</td>
+                    <td>u7211790</td>
+                </tr>
+                <tr>
+                    <td class="lable">Major:</td>
+                    <td>Master of Computing</td>
+                </tr>
+                <tr>
+                    <td class="lable">Email:</td>
+                    <td>u7211790@anu.edu.au</td>
+                </tr>
+            </table>
         </div>
-            <h1 style="text-align:center"><img src="./Images/logo.jpg" alt="logo.jpg"></h1>
-            <h1>My Passion</h1>
     </div>
+    <div class="textHeader"><img  src="./Images/textSpilt.jpg" alt="textSpilt.jpg"></div>
+    <!-- My passion part -->
+    <div id="myPassion">
+        <h1>My Passion</h1>
+        <p>
+            I really like the variety of beautiful flowers. When I see beautiful flowers, I feel relaxed and forget about my worries.
+        </p>
+        <p>
+            This website is mainly used to introduce kinds of flowers and share beautiful pictures and videos about flowers.
+            In addition, each flower has a different language and meaning, which is of great interest to me, 
+            so the site also features the language of different flowers to help those looking at the site to send the right 
+            flower for a particular occasion.
+        </p>
+        <p>
+            According to my research, flower websites nowadays are generally for buying flowers and very few have flower science websites. 
+            If people want to learn about different flowers, they need to search many times in the search engine. This website can help
+             people to learn about different categories of flowers, including pictures and videos. 
+             If you want to learn about flowers, using this one website is perfectly adequate.
+        </p>
+        <p>
+            If you love flowers or are interested in flowers, join Milo Flower and explore the beautiful world of flowers with me!
+        </p>
+
+        <div class="passionTable">
+            <table>
+                <tr>
+                    <td><img style="width: 200px;" src="./Images/flower1.jpg"></td>
+                    <td><img style="width: 200px;" src="./Images/flower2.jpg"></td>
+                    <td><img style="width: 200px;" src="./Images/flower3.jpg"></td>
+                    <td><img style="width: 200px;" src="./Images/flower4.jpg"></td>
+                </tr>
+                <tr>
+                    <td>Introduction of Flowers</td>
+                    <td>Pictures of flowers</td>
+                    <td>Video of Floewrs</td>
+                    <td>Language of Flowers</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+  
     
 </body>
 </html>

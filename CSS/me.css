@@ -1,0 +1,61 @@
+/* The style of text header */
+.textHeader{
+    width: 200px;
+    margin: 5px auto;
+}
+.textHeader img{
+    width: 200px;
+}
+/* Style of about me part */
+#aboutMe h1{
+    margin: 0px; 
+    padding: 0px;
+    font-size:40px;
+    font-family:"Arial";
+    text-align: center;
+}
+#aboutMe img{
+    width: 200px;
+}
+/* Style of introduction table  */
+.introTable{
+    width: 700px;
+    margin: 20px auto;
+}
+/* Style of my passion part */
+#myPassion{
+    margin-bottom: 100px;
+}
+#myPassion h1{
+    margin: 0px; 
+    padding: 0px;
+    font-size:40px;
+    font-family:"Arial";
+    text-align: center;
+}
+#myPassion p{
+    font-family:"Arial";
+    font-size: 18px;
+    margin: 15px 20%;
+}
+/* Style of picture table */
+.passionTable{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+.passionTable table tr td{
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+.lable{
+    font-weight: bold;
+}
+.passionTable table tr td img{
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}

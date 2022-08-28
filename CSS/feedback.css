@@ -1,0 +1,50 @@
+/* Feedbak form style */
+.feedback{
+    width: 600px; 
+    margin:20px auto; 
+}
+.feedback form{
+    width: 550px; 
+    border: 2px solid pink;
+    border-radius: 5px;
+    margin:50px auto;
+    padding: 10px;
+}
+.feedback form label{
+    font-weight:bold;
+}
+.feedback form input{
+    margin: 10px 0;
+}
+.feedback form input.text,textarea{
+    width: 100%;
+    font-size: 16px;
+}
+/* Style of submit botton */
+.feedback form input.submit{
+    margin: 0px 0px;
+    width: 80px;
+    height: 40px;
+    border: 0ch;
+    color: white;
+    background-color: pink;
+    font-size:16px;
+}
+.feedback form input.submit:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+}
+/* Style of clear botton */
+.feedback form input.clear{
+    margin: 0px 0px;
+    width: 80px;
+    height: 40px;
+    border: 0ch;
+    color: white;
+    background-color: lightgrey;
+    font-size:16px;
+}
+.feedback form input.clear:hover{
+    background-color: grey;
+    cursor: pointer;
+}

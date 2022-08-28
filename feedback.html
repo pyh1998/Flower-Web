@@ -3,36 +3,41 @@
 <head>
 <meta charset="utf-8">
 <title>Feedback Form</title>
-    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/common.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/feedback.css" type="text/css" />
 </head>
 <body>
-    <div class="meHeader header">
+    <!-- Header of this page -->
+    <div class="subHeader">
         <p class="name">Milo Flowers Website</p>
         <ul class="nav-bar">
             <li><a href="index.html"><span>Home</span></a></li>
             <li><a href="me.html"><span>About Me</span></a></li>
             <li><a href="sourcelog.html"><span>Source Log</span></a></li>
             <li><a href="feedback.html"><span>Feedback</span></a></li>
+            <li><a href="sitemap.html"><span>Site Map</span></a></li>
         </ul>
-        <h1 style="text-align: center; margin-top: 200px;">Feedback Form</h1>
+        <h1>Feedback Form</h1>
     </div>
+    <!-- Feedback Form -->
     <div class="feedback">
-        <form style="width: 550px; border:1px solid black;" method="POST" action="mailto: name@example.com" enctype="multipart/form-data">
-            <div style="margin-left: 20px">
-                Your name</br>
-                <input type="text" size="40" name="name"></br>
-                Your email address</br>
-                <input type="text" size="40" name="email"></br>
-                What is your gender</br>
+        <form method="POST" action="mailto: name@example.com" enctype="multipart/form-data">
+            <div>
+                <label>Your name</label></br>
+                <input class ="text" type="text" name="name" placeholder="Your name is..."></br>
+                <label>Your email address</label></br>
+                <input class ="text" type="text" name="email" placeholder="Your email is..."></br>
+                <label>What is your gender</label></br>
                 <input type="radio" name="sex" value="male">Male
                 <input type="radio" name="sex" value="female">Female
                 <input type="radio" name="sex" value="other">Other
                 <input type="radio" name="sex" value="noSay">I prefer not to say</br>
-                Please fill in your feedback</br>
-                <textarea rows="10" cols="40" name="feedback"></textarea>
-                <hr width="500">
-                Submit: <input type="submit" value="Send it"> or <input type="reset" value="Clear">
-                <hr width="500">
+                <label>Please fill in your feedback</label></br>
+                <textarea rows="10" name="feedback" placeholder="Please type your feedback hear..."></textarea>
+                <hr width="550">
+                <input class="clear" type="reset" value="Clear">
+                <input class="submit" type="submit" value="Submit">
+                <hr width="550">
             </div>
         </form>
     </div>

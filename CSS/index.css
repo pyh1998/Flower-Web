@@ -1,0 +1,28 @@
+/* Style of button on home page */
+.btn{
+    width: 150px;
+    display:inline-block;
+    color: black;
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing:6px;
+    text-align:center;
+    padding:8px 25px;
+    border: 2px solid black;
+}
+.btn:hover{
+    color:white;
+    border:1px solid gray;
+}
+.explore{
+    width: 250px;
+    margin: 150px auto;
+}
+/* Style of text concont on home page */
+.homeContent{
+    font-size:20px;
+    color: black;
+    font-family:"Cascadia Code";
+    margin-top: 400px;
+    text-align: center;
+}

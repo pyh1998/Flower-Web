@@ -1,0 +1,25 @@
+/* The style of source log table */
+.sourcelog table{
+    width: 80%; 
+    margin:50px auto;
+    border:2px solid pink;
+    border-collapse:collapse;
+}
+/* Title of table */
+.sourcelog table caption{
+    font-size:20px;
+    font-style:italic;
+    margin-bottom: 20px;
+}
+/* background color of first row */
+.sourcelog table th{
+    background-color: pink;
+    text-align: left;
+}
+/* Spacing in table */
+.sourcelog table th,tr,td{
+    padding:10px;
+}
+.sourcelog table tr:hover{
+    background-color: lightcyan;
+}
