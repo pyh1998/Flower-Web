@@ -30,8 +30,17 @@ body{
     height: 400px;
 }
 .subHeader h1{
+    font-family:"MV Boli";
     text-align: center; 
     margin-top: 200px;
+}
+/* The style of text header */
+.textHeader{
+    width: 200px;
+    margin: 5px auto;
+}
+.textHeader img{
+    width: 200px;
 }
 /* Delete the dots in front of ul tag  */
 ul{   
