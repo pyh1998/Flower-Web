@@ -1,0 +1,39 @@
+/* The style of the title */
+.title{
+    text-align: center;
+    font-family: Lucida Calligraphy;
+    font-size: 25px;
+}
+/* The style of storyborad */
+.storyboard{
+    width: 70%;
+    margin: 0 auto;
+}
+.storyDesc{
+    width: 30%;
+    font-size: 18px;
+    font-family: MV Boli;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.storyDesc>li{
+    padding: 5px;
+}
+.storyboard img{
+    width: 49%;
+}
+/* The style of inline video */
+.inlineVideo{
+    width: 960px;
+    margin: 50px auto
+}
+.inlineVideo>video{
+    width: 960px;
+    height: 540px;
+}
+.videoDesc{
+    font-size: 18px;
+    font-family: MV Boli;
+    margin: 0 auto;
+    text-align: center;
+}

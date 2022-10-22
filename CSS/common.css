@@ -60,19 +60,30 @@ a{
 }
 .nav-bar li{
     height:50px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height:50px;
-    padding:0 39px;
+    padding:0 18px;
     /*z-index:5;*/
 }
-.nav-bar>li>a{
+.nav-bar li>a{
     font-size:16px;
     color:black;
     display:inline-block;
 }
-.nav-bar>li>a:hover
+.nav-bar li>a:hover
 {
     border-bottom:2px solid black;
+    opacity: 0.6;
+}
+.nav-bar>li ul{
+    padding-inline-start: 0px;
+    display: none;
+}
+.nav-bar>li ul>li{
+    padding: 0;
+}
+.nav-bar> li:hover>ul{
+    display: block;
 }
 /* The style of website name */
 .name{

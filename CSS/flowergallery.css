@@ -1,0 +1,89 @@
+/* The style of the title */
+.title{
+    text-align: center;
+    font-family: Lucida Calligraphy;
+    font-size: 25px;
+}
+/* The style of image gallery */
+.flowerGallery{
+    width: 85%;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+/* Whem mouse enter, add a grey border */
+div.gallery:hover {
+border: 1px solid #777;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* The style of the responsive image gallery */
+.responsive {
+padding: 0 15px;
+float: left;
+width: 20%;
+margin-top: 40px;
+}
+/* Suits different size of screen */
+@media only screen and (max-width: 900px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+
+/* The style of flower detail part */
+.flowerDetail{
+    margin: 100px 200px;
+}
+.detailItem{
+    height: 350px;
+}
+/* Make the image be a circle */
+.detailItem img{
+    width: 15%;
+    border-radius: 50%;
+    float: left;
+}
+.detailItem div{
+    float: left;
+}
+.detailTable{
+    margin-left: 50px; 
+    width: 75%;
+}
+.detailTable table{
+    height: 200px;
+    font-size: 17px;
+    font-family: MV Boli;
+}
+.detailTable tr td{
+    vertical-align: top;
+}
+/* Bolded related content */
+.detailTable .fname{
+    font-weight: bold;
+}
+.detailTable .fmean{
+    font-weight: bold;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flower Map</title>
+    <link rel="stylesheet" href="./CSS/common.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/imagemap.css" type="text/css" />
+</head>
+<body>
+    <!-- Header of this page -->
+    <div class="subHeader">
+        <p class="name">Milo Flowers Website</p>
+        <ul class="nav-bar">
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="imagemap.html"><span>Flower-Map</span></a></li>
+            <li><a href="flowergallery.html"><span>Gallery</span></a></li>
+            <li><a href="flowervideo.html"><span>Video</span></a></li>
+            <li><a href="me.html"><span>About Me</span></a></li>
+            <li style="width:150px"><span>Others</span>
+                <ul>
+                    <li><a href="sourcelog.html"><span>Source Log</span></a></li>
+                    <li><a href="feedback.html"><span>Feedback</span></a></li>
+                    <li><a href="sitemap.html"><span>Site Map</span></a></li> 
+                </ul> 
+            </li>        
+        </ul>
+        <h1>Flower Map</h1>
+    </div>
+    <!-- Image Map, 5 different areas can be clicked in the picture-->
+    <div class="imagemap" onmousemove="show(event);" >
+        <img  src="./Images/flowerMap.jpg" alt="flowerMap.jpg" usemap="#flower-map">
+        <map id="flower-map">
+            <area id="peony" target="_blank" alt="peony" title="peony" href="./flowergallery.html#peony">
+            <area id="sunflower" target="_blank" alt="sunflower" title="sunflower" href="./flowergallery.html#sunflower">
+            <area id="leucospermum" target="_blank" alt="leucospermum" title="leucospermum" href="./flowergallery.html#leucospermum">
+            <area id="orchid" target="_blank" alt="orchid" title="orchid" href="./flowergallery.html#phalaenopsis" >
+            <area id="rose" target="_blank" alt="rose" title="rose" href="./flowergallery.html#rose">
+        </map>  
+    </div>
+    <!-- The info of different flowers which could show in the right side -->
+    <div id="infoDiv">
+        <div class="innerImg">
+            <a id="openImg" target="_blank" href="./Images/rose.png">
+                <img id="changeImg" src="./Images/rose.png" alt="rose" width="200" height="200">
+            </a>
+        </div>
+        <div id="flowerName">Rose</div>
+        <div id="desc">
+            A rose is either a woody perennial flowering plant of the genus Rosa, 
+            in the family Rosaceae, or the flower it bears. There are over three hundred species and 
+            tens of thousands of cultivars. They form a group of plants that can be 
+            erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles. 
+            Their flowers vary in size and shape and are usually large and showy, in colours ranging 
+            from white through yellows and reds. Most species are native to Asia, with smaller numbers 
+            native to Europe, North America, and northwestern Africa.
+        </div>
+    </div>
+  
+</body>
+<!-- JavaScript to show different info when mouse enter different area -->
+<script type="text/javascript">
+    function show(event) {
+        var changeImg = document.getElementById('changeImg');
+        var desc = document.getElementById('desc');
+        var flowerName = document.getElementById('flowerName');
+        var openImg = document.getElementById('openImg');
+        mouseOver(event);
+    }
+    // show different info according to the position of mouse
+    function mouseOver(obj) {
+        // get the position of the mouse
+        e = obj || window.event;
+        if(e.target.id == "peony")
+        {
+            openImg.href = "./Images/peony.png";
+            changeImg.src = "./Images/peony.png";
+            flowerName.innerHTML = "Peony";
+            desc.innerHTML = "The peony or paeony is a flowering plant in the genus Paeonia,\
+            the only genus in the family Paeoniaceae. Peonies are native to Asia, \
+            Europe and Western North America. Most are herbaceous perennial plants 0.25–1 metre tall, \
+            but some are woody shrubs 0.25–3.5 metres (1–11 ft) tall. They have compound, \
+            deeply lobed leaves and large, often fragrant flowers, in colors ranging from \
+            purple and pink to red, white or yellow, in late spring and early summer. \
+            The flowers have a short blooming season, usually only 7–10 days.";
+        }
+        else if(e.target.id == "sunflower")
+        {
+            openImg.href = "./Images/sunflower.png";
+            changeImg.src = "./Images/sunflower.png";
+            flowerName.innerHTML = "Sunflower";
+            desc.innerHTML = "The common sunflower (Helianthus annuus) is a large annual\
+             forb of the genus Helianthus grown as a crop for its edible oil and seeds. \
+             This sunflower species is also used as wild bird food, as livestock forage \
+             (as a meal or a silage plant), in some industrial applications, and as an \
+             ornamental in domestic gardens. The plant was first domesticated in the Americas.";
+        }
+        else if(e.target.id == "leucospermum")
+        {
+            openImg.href = "./Images/leucospermum.png";
+            changeImg.src = "./Images/leucospermum.png";
+            flowerName.innerHTML = "Leucospermum";
+            desc.innerHTML = "Leucospermum is a genus of evergreen upright, sometimes creeping\
+             shrubs that is assigned to the Proteaceae, with currently forty-eight known species. \
+             Almost all species are easily recognised as Leucospermum because of the long protruding\
+              styles with a thickened pollen-presenter, which jointly give the flower head the \
+              appearance of a pincushion, its common name. Pincushions can be found in South Africa, \
+              Swaziland, Zimbabwe and Mozambique.";
+        }
+        else if(e.target.id == "orchid")
+        {
+            openImg.href = "./Images/orchid.png";
+            changeImg.src = "./Images/orchid.png";
+            flowerName.innerHTML = "Phalaenopsis";
+            desc.innerHTML = "Phalaenopsis, also known as moth orchids, is a genus of about seventy\
+             species of plants in the family Orchidaceae. Orchids in this genus are monopodial \
+             epiphytes or lithophytes with long, coarse roots, short, leafy stems and long-lasting,\
+              flat flowers arranged in a flowering stem that often branches near the end. Orchids in\
+               this genus are native to India, Taiwan, China, Southeast Asia, New Guinea and Australia \
+               with the majority in Indonesia and the Philippines.";
+        }
+        else if(e.target.id == "rose")
+        {
+            openImg.href = "./Images/rose.png";
+            changeImg.src = "./Images/rose.png";
+            flowerName.innerHTML = "Rose";
+            desc.innerHTML = "A rose is either a woody perennial flowering plant of the genus Rosa, \
+            in the family Rosaceae, or the flower it bears. There are over three hundred species and \
+            tens of thousands of cultivars. They form a group of plants that can be \
+            erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles. \
+            Their flowers vary in size and shape and are usually large and showy, in colours ranging \
+            from white through yellows and reds. Most species are native to Asia, with smaller numbers \
+            native to Europe, North America, and northwestern Africa.";
+        }
+    }
+    </script>
+</html>
